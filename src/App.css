@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap");
+
 .App {
   text-align: center;
 }
@@ -9,12 +11,27 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
+    animation: filter-animation infinite 12s linear;
+  }
+}
+
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(100deg);
+  }
+
+  100% {
+    filter: hue-rotate(0deg);
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #373b43;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +39,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: "Text Me One", sans-serif;
 }
 
 .App-link {
