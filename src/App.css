@@ -40,6 +40,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
   font-family: "Text Me One", sans-serif;
+  background-image: url("bg-dark.jpg");
+  background-repeat: repeat;
 }
 
 .App-link {
